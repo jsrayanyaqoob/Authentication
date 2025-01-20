@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.navbarAI{
+    background-color: #cacaca;
+}
+
+.logoHeading img{
+    background-color: transparent;
+}
+
+.headInnnovate{
+    font-family: "Playwrite IN", serif;
+    font-size: 2rem;
+    color: #414141;
+    margin-top: 5px;
+    font-weight: bold;
+}        
+
+.middleCompartment a{
+    text-decoration: none;
+    color: #414141;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+.signUpBtn button {
+    background-color: #b982f7;
+    color: #fff;
+    border:none;
+    width: 100px;
+    padding: 7px 4px;
+    border-radius: 10px;
+    font-size: 1.35rem;
+    letter-spacing: 0.3px;
+}
+
+.middlePage{
+    background-image: url("./assets/img-Nyv2eUbZq-transformed-transformed.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 492px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.getDemo{
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    width: 155px;
+    font-weight: 600;
+    font-size: 1.366rem;
+    font-family: monospace;
+    letter-spacing: 0.6px;
+    border: 1px solid #414141;
+    border-radius: 8px;
+    box-shadow: 0px 0px 58px -33px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 58px -33px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 58px -33px rgba(0,0,0,1);  
+    margin-top: 310px;
+}
+
+.fullWelcome{
+    position: relative;
+    top: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.userName{
+    font-weight: 600;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,65 @@
+body{
+    background: rgb(232,222,175);
+    background: linear-gradient(0deg, rgba(232,222,175,1) 12%, rgba(228,230,231,1) 59%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.innovateHead{
+    display: flex;
+    margin: 10px 30px;
+}
+
+.heroCode{
+    position: relative;
+    bottom: 69px;
+}
+
+.innovateHead h1{
+    font-family: "Playwrite IN", serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #bcbcbc;
+    color: #414141;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.textAcc h1{
+    font-weight: 400;
+}
+
+#fullName , #email , #password{
+    border: none;
+    width: 350px;
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+
+#fullNameLabel , #emailLabel , #passwordLabel{
+    color: gray;
+    margin-left: 20px;
+}
+
+.submitBtn button{
+    background-color: #FFD85F;
+    color: #000;
+    width: 350px;
+    border-radius: 25px;
+    padding: 15px 15px;
+    /* margin-top: 2px; */
+    border: none;
+}
+
+.alternativeBtns button{
+    background-color: transparent;
+    width: 175px;
+    border-radius: 25px;
+    padding: 14px 15px;
+    border: 1px solid #b0b0b0;   
+    margin-top: 15px;
+}
