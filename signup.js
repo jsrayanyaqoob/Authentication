@@ -48,3 +48,62 @@ submit.addEventListener('click' , event =>{
     const stringpass = JSON.stringify(passVal)
 })
 
+
+
+
+
+import { GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+import { signInWithPopup } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+
+const provider = new GoogleAuthProvider();
+
+const google = document.querySelector("#googleLogIn")
+
+google.addEventListener('click' , event =>{
+  event.preventDefault()
+
+  signInWithPopup(auth, provider)
+  .then((result) => {
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    const user = result.user;
+    console.log(user);
+    
+   
+  }).catch((error) => {
+    const errorMessage = error.message;
+    console.log(errorMessage);
+    const email = error.customData.email;
+    const credential = GoogleAuthProvider.credentialFromError(error);
+
+  });
+})
+
+
+
+
+
+// import { signInWithPopup } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+import { FacebookAuthProvider } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
+
+const Facebookprovider = new FacebookAuthProvider();
+
+const facebook = document.querySelector("#facebookLogIn")
+
+facebook.addEventListener('click' , event =>{
+  event.preventDefault()
+
+  signInWithPopup(auth, provider)
+  .then((result) => {
+    const user = result.user;
+    console.log(user);
+    const credential = FacebookAuthProvider.credentialFromResult(result);
+    const accessToken = credential.accessToken;
+  })
+  .catch((error) => {
+    const errorMessage = error.message;
+    console.log(errorMessage);
+    const email = error.customData.email;
+    const credential = FacebookAuthProvider.credentialFromError(error);
+  });
+})
